@@ -1,0 +1,26 @@
+.bootstrap {
+    color: #dbc3ff;
+    background-color: #c39efa20;
+    padding: 5px 5px;
+    border-radius: 7.5px;
+}
+
+.mongo {
+    color: #10aa50;
+    background-color: #10aa5020;
+    padding: 5px 5px;
+    border-radius: 7.5px;
+}
+
+.express {
+    color: #bebebe;
+    background-color: #bebebe20;
+    padding: 5px 5px;
+    border-radius: 7.5px;
+}
+.mapbox {
+    color: #007afc;
+    background-color: #007afc20;
+    padding: 5px 5px;
+    border-radius: 7.5px;
+}
