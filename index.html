@@ -30,11 +30,10 @@
         <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav">
                 <a class="nav-link ps-0" href="#container2">about me</a>
-                <a class="nav-link" href="#container4">projects</a>
-                <a class="nav-link" href="#container5">contact</a>
+                <a class="nav-link" href="#container3">projects</a>
             </div>
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" href=""><i class="fab fa-linkedin fa-lg"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/in/yuval-benkovski-95435a220/"><i class="fab fa-linkedin fa-lg"></i></a>
                 <a class="nav-link me-0 pe-0" href="https://github.com/yuvalbenkovski"><i
                         class="fab fa-github fa-lg"></i></a>
             </div>
@@ -47,13 +46,13 @@
         <h2>A Full Stack Web Developer.</h2>
     </div>
     <div class="wrap align-self-end position-absolute w-100" style="height: 300px;">
-        <a class="button mainbtn mx-auto" href="#container2">Learn more</a>
+        <a class="button mainbtn mx-auto" id="mainbutton" href="#container2">Learn more</a>
     </div>
 </div>
 <div id="container2" class="container d-flex position-relative">
     <div class="row mx-auto my-5 align-items-center">
         <div class="col-7 inline-flex ps-0">
-            <div class="h1 pheading">About me</div>
+            <div class="h1 heading">About me</div>
             <div class="about-me m-0"> My name is Yuval Benkovski,<br>I'm 23 years old, and I'm an eager junior
                 looking
                 for
@@ -76,11 +75,11 @@
         </div>
         <div class="col-5 d-flex align-self-center pe-0">
             <div class="profile-picture-container mx-auto">
-                <img src="../pp.jpg" alt="">
+                <img src="./public/images/profile-picture.jpg" alt="">
             </div>
         </div>
         <div class="col-12 px-0">
-            <div class="h1 pheading">Skills</div>
+            <div class="h1 heading">Skills</div>
             <div class="skills mt-4 d-flex justify-content-between">
                 <div class="skill">HTML</div>
                 <div class="skill">CSS</div>
@@ -94,7 +93,7 @@
             </div>
         </div>
         <div class="px-0">
-            <div class="h1 pheading">Let's Talk!</div>
+            <div class="h1 heading">Let's Talk!</div>
             <div class="mt-1 mb-3" style="font-size: 1.5em; font-weight: 200;">
                 Reach out at these places and download my résumé!
             </div>
@@ -111,9 +110,20 @@
         </div>
     </div>
 </div>
-<div id="container3" class="container d-flex">
-    <div class="row mx-auto my-5 w-100">
-        <div class="col-6 p-0">
+<div id="container3" class="container d-flex h-auto">
+    <div class="row mx-auto w-100">
+        <div class="my-5 p-0">
+        <div class="col-12 p-0">
+            <div class="h1 heading">My Projects</div>
+        </div>
+        <div class="col-12 p-0">
+            <div style="font-size: 1.5em; font-weight: 200;">
+                Here is a collection of some of my projects, make sure to visit my github repositories to view the source code for each project,
+                and click on the image icon to view additional shots !
+            </div>
+        </div>
+    </div>
+        <div class="col-6 p-0 mb-5">
             <div class="card">
                 <img src="./public/images/YelpCamp.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -132,7 +142,7 @@
                             <div class="mapbox"><i class="fas fa-map-marker-alt me-2"></i>Mapbox</div>
                         </div>
                         <div class="ms-auto my-auto">
-                            <a href="#"><i class="fab fa-github fa-lg text-white me-2"></i></a>
+                            <a href="https://github.com/yuvalbenkovski/yelpcamp"><i class="fab fa-github fa-lg text-white me-2"></i></a>
                             <a href="#"><i class="fas fa-external-link-alt fa-lg text-white"></i></a>
                         </div>
                     </div>
@@ -155,8 +165,30 @@
                             <div class="bootstrap"><i class="fab fa-bootstrap me-2"></i>Bootstrap</div>
                         </div>
                         <div class="ms-auto my-auto">
-                            <a href="#"><i class="fab fa-github fa-lg text-white me-2"></i></a>
-                            <a href="#"><i class="fas fa-external-link-alt fa-lg text-white"></i></a>
+                            <a href="https://github.com/yuvalbenkovski/moviefinder"><i class="fab fa-github fa-lg text-white me-2"></i></a>
+                            <a href="#"><i class="fas fa-images fa-lg text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 p-0 mt-5 mb-5">
+            <div class="card">
+                <img src="./public/images/ChatsApp-landing-page.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ChatsApp</h5>
+                    <p class="card-text">ChatsApp is a WhatsApp Web clone based on Socket.IO.<br>
+                        Included features: Real-time communication between online users, chat history, authentication, notifications, and more.
+                    </p>
+                    <div class="footer d-flex">
+                        <div class="technologies d-flex">
+                            <div class="me-3 socketio"><i class="fas fa-bolt me-2"></i>Socket.io</div>
+                            <div class="me-3 mongo"><i class="fas fa-database me-2"></i>MongoDB</div>
+                            <div class="bootstrap"><i class="fas fa-map-marker-alt me-2"></i>Bootstrap</div>
+                        </div>
+                        <div class="ms-auto my-auto">
+                            <a href="https://github.com/yuvalbenkovski/chatsapp"><i class="fab fa-github fa-lg text-white me-2"></i></a>
+                            <a href="#"><i class="fas fa-images fa-lg text-white"></i></a>
                         </div>
                     </div>
                 </div>

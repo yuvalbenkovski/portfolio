@@ -6,10 +6,6 @@ html {
     /*  overflow-y: hidden; */
 }
 
-#container1 {
-    overflow-y: hidden;
-}
-
 body {
     width: 100%;
     color: #ffffff;
@@ -70,7 +66,7 @@ a:focus {
     color: #4FD1C5;
 }
 
-.pheading {
+.heading {
     color: #4FD1C5;
     font-size: 2em;
 }
@@ -160,12 +156,27 @@ i:hover {
 }
 
 @media (max-width: 575.98px) {
-    #intro {
-        text-align: center;
-        /*         align-items: flex-start !important; */
+    .intro h1 {
+        font-size: 3rem;
     }
-    .cusbtn {
-        margin-bottom: 1em !important;
+    .intro h2 {
+        font-size: 1.75rem;
+    }
+    #mainbutton {
+        min-width: 250px;
+        min-height: 50px;
+        font-size: 18px;
+    }
+    #mainbutton::before {
+        min-width: calc(250px + 12px);
+        min-height: calc(50px + 12px);
+        border: 7px solid #00FFCB;
+    }
+    .navbar {
+        margin-top: 0 !important;
+    }
+    .navbar-collapse {
+        padding-left: 12px;
     }
 }
 
