@@ -21,6 +21,11 @@ body {
     padding: 0;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 .carousel-item img {
     height: 500px;
 }
@@ -74,7 +79,7 @@ a:focus {
     font-size: 2em;
 }
 
-.about-me {
+.text {
     font-weight: 200;
     font-size: 1.5em;
 }
@@ -159,6 +164,7 @@ i:hover {
 }
 
 @media (max-width: 575.98px) {
+    /*First container*/
     .intro h1 {
         font-size: 3rem;
     }
@@ -171,9 +177,15 @@ i:hover {
         font-size: 18px;
     }
     #mainbutton::before {
-        min-width: calc(250px + 12px);
-        min-height: calc(50px + 12px);
-        border: 7px solid #00FFCB;
+        min-width: 250px;
+        min-height: 50px;
+        border: 0;
+        box-shadow: 0;
+        opacity: 0;
+        transition: 0s;
+    }
+    #mainbutton:hover, #mainbutton:focus {
+        transform: translateY(0px);
     }
     .navbar {
         margin-top: 0 !important;
@@ -181,48 +193,84 @@ i:hover {
     .navbar-collapse {
         padding-left: 12px;
     }
+    /*Second container*/
+    #about {
+        height: auto;
+    }
+    #projects {
+        height: auto;
+    }
+    .heading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .text {
+        text-align: center;
+        font-size: 1.25em;
+    }
+    .skills {
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .skill {
+        padding: 5px 10px;
+        font-size: 1.10rem;
+        box-shadow: 0 0 5px 1px #4FD1C5;
+        border-radius: 100px;
+        margin: 5px;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper div:first-child {
+        order: 1;
+    }
+    .profile-picture-container {
+        margin-bottom: 3rem;
+        height: 250px;
+        width: 250px;
+    }
+    .profile-picture-container img {
+        height: 250px;
+        width: 250px;
+    }
+    .about-me {
+        margin-bottom: 3rem;
+    }
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .socials i {
+        font-size: 1.25em;
+        margin-left: 0 !important;
+        margin: 15px 15px 0 0;
+    }
+    .socials i a {
+        font-size: 1em;
+    }
+    .arrow {
+        display: none;
+    }
+    .card {
+        width: auto !important;
+        padding: 2.5px 2.5px 0 0;
+    }
 }
 
 /* // small devices (landscape phones, less than 768px) */
 
-@media (max-width: 767.98px) {
-    .mainbtn {
-        margin: auto;
-    }
-    .about-me {
-        font-size: 1.3em;
-    }
-    .buttons {
-        text-align: center;
-    }
-    .cusbtn {
-        margin-right: 0 !important;
-    }
-    #container2 {
-        text-align: center;
-    }
-    #container5 {
-        text-align: center;
-    }
-}
+@media (max-width: 767.98px) {}
 
 /* // Medium devices (tablets, less than 992px) */
 
-@media (max-width: 991.98px) {
-    .picture {
-        display: none;
-    }
-}
+@media (max-width: 991.98px) {}
 
 /* // Large devices (desktops, less than 1200px) */
 
 @media (max-width: 1199.98px) {}
 
-@media (max-width: 1399.98px) {
-    #container4 {
-        height: 175vh;
-    }
-    html {
-        overflow-y: visible;
-    }
-}
+@media (max-width: 1399.98px) {}

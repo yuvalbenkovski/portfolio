@@ -19,7 +19,7 @@
         rel="stylesheet">
 </head>
 <div id="bg-container"></div>
-<div id="container1" class="container d-flex align-items-center position-relative">
+<div id="home" class="container d-flex align-items-center position-relative">
     <nav class="navbar navbar-expand-sm mt-5 align-self-start">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,8 +27,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav">
-                <a class="nav-link ps-0" href="#container2">about me</a>
-                <a class="nav-link" href="#container3">projects</a>
+                <a class="nav-link ps-0" href="#about">about me</a>
+                <a class="nav-link" href="#projects">projects</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="https://www.linkedin.com/in/yuval-benkovski-95435a220/"><i class="fab fa-linkedin fa-lg"></i></a>
@@ -44,14 +44,15 @@
         <h2>A Full Stack Web Developer.</h2>
     </div>
     <div class="wrap align-self-end position-absolute w-100" style="height: 300px;">
-        <a class="button mainbtn mx-auto" id="mainbutton" href="#container2">Learn more</a>
+        <a class="button mainbtn mx-auto" id="mainbutton" href="#about">Learn more</a>
     </div>
 </div>
-<div id="container2" class="container d-flex position-relative">
+<div id="about" class="container d-flex position-relative">
     <div class="row mx-auto my-5 align-items-center">
-        <div class="col-7 inline-flex ps-0">
+        <div class="wrapper p-0">
+        <div class="col-12 col-xl-7 inline-flex ps-0 about-me">
             <div class="h1 heading">About me</div>
-            <div class="about-me m-0"> My name is Yuval Benkovski,<br>I'm 23 years old, and i'm incredibily passionate about coding.<br>
+            <div class="text m-0"> My name is Yuval Benkovski,<br>I'm 23 years old, and i'm incredibily passionate about coding.<br>
                 I mainly focus on full-stack web development, but have also
                 practiced in web
                 design. <br>
@@ -62,11 +63,12 @@
                 efficiency.
             </div>
         </div>
-        <div class="col-5 d-flex align-self-center pe-0">
+        <div class="col-12 col-xl-5 d-flex align-self-center pe-0">
             <div class="profile-picture-container mx-auto">
                 <img src="./public/images/profile-picture.jpg" alt="">
             </div>
         </div>
+    </div>
         <div class="col-12 px-0">
             <div class="h1 heading">Skills</div>
             <div class="skills mt-4 d-flex justify-content-between">
@@ -83,30 +85,30 @@
         </div>
         <div class="px-0">
             <div class="h1 heading">Let's Talk!</div>
-            <div class="mt-1 mb-3" style="font-size: 1.5em; font-weight: 200;">
+            <div class="mt-1 mb-3 text">
                 Reach out at these places and download my résumé!
             </div>
-            <div class="d-flex"> <i class="far fa-envelope contact-link" style="margin-left: 1px;"><a>
-                        Email</a></i>
-                <i class="fab fa-linkedin contact-link ms-5"><a> LinkedIn</a></i>
-                <i class="fab fa-github contact-link ms-5"><a> Github</a></i>
+            <div class="d-flex socials"> 
+                <i class="far fa-envelope contact-link" style="margin-left: 1px;"><a>Email</a></i>
+                <i class="fab fa-linkedin contact-link ms-5"><a href="https://www.linkedin.com/in/yuval-benkovski-95435a220/"> LinkedIn</a></i>
+                <i class="fab fa-github contact-link ms-5"><a href="https://github.com/yuvalbenkovski"> Github</a></i>
                 <i class="far fa-file contact-link ms-5"><a> Resume</a></i>
             </div>
             <div class="arrow bounce">
                 <div>Projects</div>
-                <a class="fas fa-chevron-down fa-2x d-flex justify-content-center" href="#container3"></a>
+                <a class="fas fa-chevron-down fa-2x d-flex justify-content-center" href="#projects"></a>
             </div>
         </div>
     </div>
 </div>
-<div id="container3" class="container d-flex h-auto position-relative">
+<div id="projects" class="container d-flex h-auto position-relative">
     <div class="row mx-auto w-100">
         <div class="my-5 p-0">
         <div class="col-12 p-0">
             <div class="h1 heading">My Projects</div>
         </div>
         <div class="col-12 p-0">
-            <div style="font-size: 1.5em; font-weight: 200;">
+            <div class="text">
                 Here is a collection of some of my projects, make sure to visit my github repositories to view the source code for each project,
                 and click on the image icon to load additional shots !<br>
                 <small class="text-muted">
@@ -115,7 +117,7 @@
             </div>
         </div>
     </div>
-        <div class="col-6 p-0 mb-5">
+        <div class="col-12 col-xl-6 p-0 mb-5">
             <div class="card">
                 <img src="./public/images/projects/yelpcamp/YelpCamp.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -138,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 p-0">
+        <div class="col-12 col-xl-6 p-0">
             <div class="card ms-auto">
                 <img src="./public/images/projects/moviefinder/index.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -161,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 p-0 mt-5 mb-5">
+        <div class="col-12 col-xl-6 p-0 mt-5 mb-5">
             <div class="card">
                 <img src="./public/images/projects/chatsapp/ChatsApp-landing-page.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -183,7 +185,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 p-0 mt-5">
+        <div class="col-12 col-xl-6 p-0 mt-5">
             <div class="card ms-auto">
                 <img src="./public/images/portfolio-landing-page.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -212,7 +214,7 @@
         </div>
     </div>
     <div class="arrow bounce bottom-0 mb-2">
-        <a class="fas fa-chevron-up fa-2x d-flex justify-content-center" href="#container1"></a>
+        <a class="fas fa-chevron-up fa-2x d-flex justify-content-center" href="#home"></a>
         <div>Back to the top</div>
     </div>
 </div>
