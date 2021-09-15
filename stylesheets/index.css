@@ -55,7 +55,7 @@ a:focus {
 }
 
 .intro h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .navbar {
@@ -163,13 +163,27 @@ i:hover {
     transition: color .15s ease-in-out;
 }
 
+img {
+    object-fit: cover;
+}
+
+.modal-content {
+    border: none;
+}
+
 @media (max-width: 575.98px) {
+    .container {
+        padding: 0 7.5px 0 7.5px;
+    }
     /*First container*/
+    .intro {
+        margin-bottom: 5rem;
+    }
     .intro h1 {
         font-size: 3rem;
     }
     .intro h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     #mainbutton {
         min-width: 250px;
@@ -257,7 +271,28 @@ i:hover {
     }
     .card {
         width: auto !important;
-        padding: 2.5px 2.5px 0 0;
+        margin: 0 5px 0 5px !important;
+        box-shadow: 0 0 20px 2px #00d7c3;
+        border: none !important;
+    }
+    .tech {
+        font-size: 0.75rem;
+        padding: 4px 4px;
+    }
+    .me-3 {
+        margin-right: 0.5rem !important;
+    }
+    .me-2 {
+        margin-right: 0.25rem !important;
+    }
+    .card-social {
+        font-size: 1.15rem !important;
+    }
+    .chatsapp-col {
+        margin-bottom: 0 !important;
+    }
+    .carousel-item img {
+        height: 300px;
     }
 }
 
@@ -274,3 +309,18 @@ i:hover {
 @media (max-width: 1199.98px) {}
 
 @media (max-width: 1399.98px) {}
+
+@media (min-width: 767.98px) {
+    @keyframes ring {
+        0% {
+            width: 30px;
+            height: 30px;
+            opacity: 1;
+        }
+        100% {
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+        }
+    }
+}
