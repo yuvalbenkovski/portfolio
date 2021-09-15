@@ -204,9 +204,9 @@ img {
     .navbar {
         margin-top: 0 !important;
     }
-    .navbar-collapse {
+    /*     .navbar-collapse {
         padding-left: 12px;
-    }
+    } */
     /*Second container*/
     #about {
         height: auto;
@@ -293,6 +293,9 @@ img {
     }
     .carousel-item img {
         height: 300px;
+    }
+    .wrap, .navbar {
+        width: calc(100% - 7.5px) !important;
     }
 }
 

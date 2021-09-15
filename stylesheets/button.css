@@ -1,8 +1,9 @@
 .wrap {
-    height: 200px;
+    height: 300px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    width: 100%
 }
 
 .button {
