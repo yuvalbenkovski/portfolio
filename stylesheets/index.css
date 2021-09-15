@@ -295,7 +295,7 @@ img {
         height: 300px;
     }
     .wrap, .navbar {
-        width: calc(100% - 7.5px) !important;
+        width: calc(100% - 15px) !important;
     }
 }
 
