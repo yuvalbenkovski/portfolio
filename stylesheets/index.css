@@ -113,9 +113,10 @@ i:hover {
     position: absolute;
     right: 0;
     font-size: 1.25em;
+    cursor: pointer;
 }
 
-.arrow a {
+.arrow i {
     color: #4FD1C5;
     text-decoration: none;
 }
@@ -146,6 +147,7 @@ i:hover {
 }
 
 .profile-picture-container img {
+    object-fit: cover;
     object-position: top;
     box-shadow: 0 0 20px 1px #4FD1C5;
     border-radius: 50%;
@@ -183,6 +185,12 @@ i:hover {
 }
 
 /* // Large devices (desktops, less than 1200px) */
+
+@media (min-width: 1199.98px) and (max-width: 1399.98px) {
+    .card {
+        width: 34rem !important;
+    }
+}
 
 @media (max-width: 1199.98px) {
     #about, #projects {
@@ -294,7 +302,6 @@ i:hover {
         width: 250px;
     }
 }
-
 
 @media (max-width: 575.98px) {
     .intro h1 {
