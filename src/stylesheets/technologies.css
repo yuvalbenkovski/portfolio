@@ -1,0 +1,44 @@
+.tech {
+    padding: 5px 5px;
+    border-radius: 7.5px;
+}
+
+.bootstrap {
+    color: #dbc3ff;
+    background-color: #c39efa20;
+}
+
+.mongo {
+    color: #10aa50;
+    background-color: #10aa5020;
+}
+
+.express {
+    color: #bebebe;
+    background-color: #bebebe20;
+}
+
+.mapbox {
+    color: #007afc;
+    background-color: #007afc20;
+}
+
+.socketio {
+    color: #000000;
+    background-color: #ffffff80;
+}
+
+.passport {
+    color: #d6ff00;
+    background-color: #d6ff0020;
+}
+
+.css {
+    color: #ffffff;
+    background-color: #264de450;
+}
+
+.html {
+    color: #e34c26;
+    background-color: #e34c2620;
+}
