@@ -303,14 +303,14 @@ i:hover {
 }
 
 @media (max-width: 575.98px) {
-    .intro h1 {
-        font-size: 3rem;
-    }
-    .intro h2 {
-        font-size: 2.25rem;
+    .nav-link {
+        width: fit-content;
     }
     .navbar {
         margin-top: 0 !important;
+    }
+    .navbar a {
+        font-size: 1.5em;
     }
     #index-button {
         min-width: 250px;
@@ -327,6 +327,12 @@ i:hover {
     }
     #index-button:hover, #index-button:focus {
         transform: translateY(0px);
+    }
+    .intro h1 {
+        font-size: 3rem;
+    }
+    .intro h2 {
+        font-size: 2.25rem;
     }
     .socials .contact-link {
         font-size: 1.25em;
