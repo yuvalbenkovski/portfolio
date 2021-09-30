@@ -179,8 +179,10 @@ i:hover {
 .carousel-item img {
     height: auto;
 }
-
-/* // Large devices (desktops, less than 1200px) */
+footer {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
     .card {
@@ -358,5 +360,9 @@ i:hover {
     }
     .card-socials-margin {
         margin-right: .1rem !important;
+    }
+    footer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
